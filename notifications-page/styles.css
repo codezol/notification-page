@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    
+}
+.flex{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+body{
+    height: 140vh;
+    background-color:hsl(211, 68%, 94%);
+    display: grid;
+    place-content: center;
+    
+}
+.container{
+    background-color: white;
+    width: 39rem;
+    margin:auto;
+    border-radius: 1rem;
+}
+img{
+    min-width: 3rem;
+    max-width: 3rem;
+    margin-top: 0.5rem;
+}
+header ,  main{
+    padding: 1rem 1.5rem;
+} 
+main {
+    gap: 0.5rem
+}
+header {
+    justify-content: space-between;
+}
+header h1{
+    font-size: 1.4rem;
+}
+header h4{
+    color: gray;
+    font-size: 1rem;
+}
+header h1 span {
+    background-color:  hsl(219, 85%, 26%);
+    color: white;
+    padding: 0.1rem 0.5rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    
+}
+main .flex{
+    gap: 1rem
+}
+.notificatoin{
+    line-height: 1.5rem;
+    padding: 0.5rem 0;
+}
+p{
+    color: gray;
+    font-size: 0.9rem;
+}
+.notificatoin .flex{
+    gap: 0.3rem;
+    flex-wrap: wrap;
+}
+.new {
+    background-color: hsl(205, 33%, 90%);
+    width: 100%;
+    border-radius: 0.5rem
+}
+.new .notificatoin-wraper:after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 0.4rem;
+    height: 0.4rem;
+    margin: 0.6rem 0.2rem;
+    border-radius: 50%
+}
+.notification-container{
+    padding: 0.3rem 0.6rem;
+    align-items: flex-start;
+}
+.id ,.source{
+    font-size: 0.85rem;
+    color:#000;
+    font-weight: bold;
+}
+.reaction {
+    padding: 0 0.3rem;
+}
+.id:hover,.source:hover,header h4:hover {
+    cursor: pointer;
+    color:  hsl(219, 85%, 26%);
+}
+.private {
+    width: 85%;
+margin-left: auto;
+border: 1px solid hsl(205, 33%, 90%);
+padding: 1rem;
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s;
+}
+.private:hover{
+    background-color: hsl(205, 33%, 90%);
+
+}
+@media screen and (max-width: 660px) {
+    .container{
+        width: 90%;
+    }
+}
